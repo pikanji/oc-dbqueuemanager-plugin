@@ -1,0 +1,6 @@
+plugin:
+    name: 'pikanji.dbqueuemanager::plugin.name'
+    description: 'pikanji.dbqueuemanager::plugin.description'
+    author: 'pikanji.dbqueuemanager::plugin.author'
+    homepage: 'https://coderwall.com/pikanji'
+

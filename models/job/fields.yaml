@@ -1,0 +1,20 @@
+fields:
+    id:
+        label: 'pikanji.dbqueuemanager::lang.model.job.field.id'
+        disabled: true
+        span: auto
+    queue:
+        label: 'pikanji.dbqueuemanager::lang.model.job.field.queue'
+        span: auto
+    payload:
+        label: 'pikanji.dbqueuemanager::lang.model.job.field.payload'
+        span: auto
+    attempts:
+        label: 'pikanji.dbqueuemanager::lang.model.job.field.attempts'
+        span: auto
+    available_at:
+        label: 'pikanji.dbqueuemanager::lang.model.job.field.available_at'
+        span: auto
+    created_at:
+        label: 'pikanji.dbqueuemanager::lang.model.job.field.created_at'
+        span: auto

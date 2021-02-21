@@ -1,0 +1,17 @@
+columns:
+    id:
+        label: 'pikanji.dbqueuemanager::lang.model.job.field.id'
+        searchable: true
+    queue:
+        label: 'pikanji.dbqueuemanager::lang.model.job.field.queue'
+        searchable: true
+    payload:
+        label: 'pikanji.dbqueuemanager::lang.model.job.field.payload'
+        searchable: true
+        width: 50%
+    attempts:
+        label: 'pikanji.dbqueuemanager::lang.model.job.field.attempts'
+    available_at:
+        label: 'pikanji.dbqueuemanager::lang.model.job.field.available_at'
+    created_at:
+        label: 'pikanji.dbqueuemanager::lang.model.job.field.created_at'

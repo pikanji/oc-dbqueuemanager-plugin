@@ -1,0 +1,16 @@
+{
+    "name": "pikanji/oc-dbqueuemanager-plugin",
+    "type": "october-plugin",
+    "description": "Allows to manage jobs in database queue.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kanji Furuhashi"
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "composer/installers": "~1.0",
+        "jenssegers/agent": "^2.6"
+    }
+}

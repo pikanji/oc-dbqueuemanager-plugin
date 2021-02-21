@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Job
+
+# Model Form Field configuration
+form: $/pikanji/dbqueuemanager/models/job/fields.yaml
+
+# Model Class name
+modelClass: Pikanji\DbQueueManager\Models\Job
+
+# Default redirect location
+defaultRedirect: pikanji/dbqueuemanager/jobs
+
+# Create page
+create:
+    title: Create Job
+    redirect: pikanji/dbqueuemanager/jobs/update/:id
+    redirectClose: pikanji/dbqueuemanager/jobs
+
+# Update page
+update:
+    title: Edit Job
+    redirect: pikanji/dbqueuemanager/jobs
+    redirectClose: pikanji/dbqueuemanager/jobs
+
+# Preview page
+preview:
+    title: Preview Job
