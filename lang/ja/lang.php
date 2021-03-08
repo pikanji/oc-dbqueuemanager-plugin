@@ -11,6 +11,7 @@ return [
             'label' => 'バックグラウンドジョブ',
             'description' => '現在実行待ちのジョブを表示します',
             'category' => 'システム状態',
+            'permission_label' => 'バックグラウンドジョブ閲覧',
         ],
     ],
     'model' => [

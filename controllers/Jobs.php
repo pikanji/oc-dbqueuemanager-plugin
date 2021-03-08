@@ -27,6 +27,8 @@ class Jobs extends Controller
      */
     public $listConfig = 'config_list.yaml';
 
+    public $requiredPermissions = ['pikanji.dbqueuemanager.access_background_jobs'];
+
     public function __construct()
     {
         parent::__construct();

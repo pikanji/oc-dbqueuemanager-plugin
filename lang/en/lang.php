@@ -11,6 +11,7 @@ return [
             'label' => 'Background Jobs',
             'description' => 'Display pending jobs',
             'category' => 'System Status',
+            'permission_label' => 'View background jobs',
         ],
     ],
     'model' => [

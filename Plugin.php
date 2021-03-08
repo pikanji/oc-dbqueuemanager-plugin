@@ -1,6 +1,7 @@
 <?php namespace Pikanji\DbQueueManager;
 
 use Backend;
+use Backend\Models\UserRole;
 use System\Classes\PluginBase;
 
 /**
@@ -8,6 +9,10 @@ use System\Classes\PluginBase;
  */
 class Plugin extends PluginBase
 {
+    /**
+     * @return array[]
+     * @noinspection PhpMissingReturnTypeInspection to match the signature of overridden method
+     */
     public function registerSettings()
     {
         return [
@@ -18,8 +23,25 @@ class Plugin extends PluginBase
                 'icon'        => 'icon-tasks',
                 'url'         => Backend::url('pikanji/dbqueuemanager/jobs'),
                 'order'       => 500,
-                'keywords'    => 'queue job'
+                'keywords'    => 'queue job',
+                'permissions' => ['pikanji.dbqueuemanager.access_background_jobs'],
             ]
+        ];
+    }
+
+    /**
+     * @return array[]
+     * @noinspection PhpMissingReturnTypeInspection to match the signature of overridden method
+     */
+    public function registerPermissions()
+    {
+        return [
+            'pikanji.dbqueuemanager.access_background_jobs' => [
+                'label' => 'pikanji.dbqueuemanager::lang.settings.jobs.permission_label',
+                'tab' => 'system::lang.permissions.name',
+                'order' => 1000,
+                'roles' => UserRole::CODE_DEVELOPER,
+            ],
         ];
     }
 }
