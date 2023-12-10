@@ -54,7 +54,8 @@ class Job extends Model
      */
     protected $dates = [
         'created_at',
-        'updated_at'
+        'updated_at',
+        'available_at',
     ];
 
     /**
