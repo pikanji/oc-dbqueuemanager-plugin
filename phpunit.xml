@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="tests/bootstrap.php" cacheResult="false"
+         failOnWarning="true" failOnRisky="true"
+         convertErrorsToExceptions="true" convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true" convertDeprecationsToExceptions="true">
+    <testsuites>
+        <testsuite name="DbQueueManager regression">
+            <directory suffix="Test.php">tests/platform</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>

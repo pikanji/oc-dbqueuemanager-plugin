@@ -14,6 +14,12 @@ class Job extends Model
      */
     public $table = 'jobs';
 
+    // Queue timestamps are managed by Laravel's worker; jobs has no updated_at column.
+    public $timestamps = false;
+
+    // Preserve the queue schema's Unix seconds when dates are edited in the backend.
+    protected $dateFormat = 'U';
+
     /**
      * @var array Guarded fields
      */
@@ -54,7 +60,6 @@ class Job extends Model
      */
     protected $dates = [
         'created_at',
-        'updated_at',
         'available_at',
     ];
 
